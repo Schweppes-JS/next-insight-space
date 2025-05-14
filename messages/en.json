@@ -1,0 +1,28 @@
+{
+  "NAVIGATION": {
+    "HOME": "Home",
+    "SERVICES": "Services",
+    "BOOK": "Book",
+    "CONTACTS": "Contacts",
+    "BOOK_APPOINTMENT": "Book Appointment"
+  },
+  "HOME": {
+    "TITLE": "Online Psychological Help",
+    "SUBTITLE": "Professional support and counseling for your mental health"
+  },
+  "METADATA": {
+    "TITLE": "Online Psychologist",
+    "DESCRIPTION": "Book your online consultation with a psychologist"
+  },
+  "NOT_FOUND": {
+    "TITLE": "Not Found",
+    "DESCRIPTION": "Could not find requested resource"
+  },
+  "LANGUAGE_SWITCHER": {
+    "LABEL": "Language",
+    "SELECT_LANGUAGE": "Select language",
+    "AVAILABLE_LANGUAGES": "Available languages",
+    "ENGLISH": "English",
+    "UKRAINIAN": "Ukrainian"
+  }
+}

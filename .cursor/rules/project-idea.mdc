@@ -1,0 +1,22 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Purpose: 
+- A bilingual web application for a self-employed psychologist, allowing clients to book sessions and pay online.
+
+Session Types:
+- Individual therapy
+- Couples therapy
+- Group therapy
+
+Core Features:
+- Calendar-based scheduling for available time slots.
+- Session selection (type + date + time).
+- Mandatory payment within 15 minutes to confirm booking.
+- Automatic cancellation if payment is not completed.
+
+Payment via:
+- LiqPay for Ukrainian clients
+- Stripe for international clients
