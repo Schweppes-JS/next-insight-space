@@ -1,6 +1,6 @@
 import { type Metadata } from "next";
 
-import { type LOCALES } from "@/constants/appConfig";
+import { type LOCALES } from "@/constants/locales";
 
 export type AppLocaleType = (typeof LOCALES)[number];
 

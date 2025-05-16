@@ -10,9 +10,38 @@
     "TITLE": "Online Psychological Help",
     "SUBTITLE": "Professional support and counseling for your mental health"
   },
+  "SERVICES": {
+    "TITLE": "Our Services",
+    "INDIVIDUAL": {
+      "TITLE": "Individual Therapy",
+      "DESCRIPTION": "One-on-one sessions focused on your personal growth and well-being"
+    },
+    "COUPLES": {
+      "TITLE": "Couples Therapy",
+      "DESCRIPTION": "Support for couples seeking to improve their relationship"
+    },
+    "GROUP": {
+      "TITLE": "Group Therapy",
+      "DESCRIPTION": "Therapeutic sessions in a supportive group environment"
+    }
+  },
+  "BOOK": {
+    "TITLE": "Book a Session",
+    "DESCRIPTION": "Choose your preferred session type and time"
+  },
+  "CONTACTS": {
+    "TITLE": "Contact Information",
+    "EMAIL": "Email",
+    "PHONE": "Phone",
+    "SOCIAL": "Social Media",
+    "ADDRESS": "Address"
+  },
   "METADATA": {
     "TITLE": "Online Psychologist",
-    "DESCRIPTION": "Book your online consultation with a psychologist"
+    "DESCRIPTION": "Book your online consultation with a psychologist",
+    "SERVICES": "Services",
+    "BOOK": "Book a Session",
+    "CONTACTS": "Contact Us"
   },
   "NOT_FOUND": {
     "TITLE": "Not Found",

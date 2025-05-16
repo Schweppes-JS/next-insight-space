@@ -4,8 +4,8 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 
 import { Header } from "@/components/app-layout/header";
-import { LOCALES } from "@/constants/appConfig";
 import { INTER } from "@/constants/fonts";
+import { LOCALES } from "@/constants/locales";
 import { GenerateMetadataType, LayoutPropsType } from "@/types/app-types";
 
 import "@/styles/globals.css";
@@ -30,7 +30,6 @@ export default async function RootLayout({ children, params }: LayoutPropsType) 
     </html>
   );
 }
-
 export const generateMetadata: GenerateMetadataType = async ({ params }) => {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "METADATA" });
