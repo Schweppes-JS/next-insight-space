@@ -1,6 +1,6 @@
-"use client";
+import Link from "next/link";
 
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
 import {
   NavigationMenu,
@@ -9,26 +9,26 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { NavigationKeys, ROUTES } from "@/constants/routes";
-import { Link } from "@/i18n/routing";
+import { HOME_PATH, ROUTES } from "@/constants/routes";
+import { LocalePropsType, NavigationKeysType, PathsType } from "@/types/app-types";
 
 import { LanguageSwitcher } from "./language-switcher";
 
-export function Header() {
-  const t = useTranslations("NAVIGATION");
+export async function Header({ locale }: LocalePropsType["params"]) {
+  const t = await getTranslations({ locale, namespace: "NAVIGATION" });
 
   return (
     <header className="bg-background/95 supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 w-full border-b backdrop-blur">
       <div className="container flex h-16 items-center">
-        <Link href={ROUTES.HOME} className="mr-8 flex items-center space-x-2">
+        <Link href={`/${locale}${HOME_PATH}`} className="mr-8 flex items-center space-x-2">
           <span className="text-xl font-bold">Dr. Psychology</span>
         </Link>
         <NavigationMenu>
           <NavigationMenuList>
-            {Object.entries(ROUTES).map(([key, value]) => (
-              <NavigationMenuItem key={key + value}>
+            {Object.entries<PathsType>(ROUTES).map(([translationKey, path]) => (
+              <NavigationMenuItem key={translationKey + path}>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()} asChild>
-                  <Link href={value}>{t(key as NavigationKeys)}</Link>
+                  <Link href={`/${locale}${path}`}>{t(translationKey as NavigationKeysType)}</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
             ))}

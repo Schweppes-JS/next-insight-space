@@ -23,7 +23,7 @@ export default async function RootLayout({ children, params }: LayoutPropsType) 
       </head>
       <body className={INTER.className} suppressHydrationWarning>
         <NextIntlClientProvider messages={messages} locale={locale}>
-          <Header />
+          <Header locale={locale} />
           {children}
         </NextIntlClientProvider>
       </body>

@@ -4,7 +4,7 @@
     "SERVICES": "Services",
     "BOOK": "Book",
     "CONTACTS": "Contacts",
-    "BOOK_APPOINTMENT": "Book Appointment"
+    "ABOUT": "About"
   },
   "HOME": {
     "TITLE": "Online Psychological Help",
@@ -36,12 +36,30 @@
     "SOCIAL": "Social Media",
     "ADDRESS": "Address"
   },
+  "ABOUT": {
+    "TITLE": "About Me",
+    "SUBTITLE": "Dedicated to helping you achieve mental well-being",
+    "EXPERIENCE": {
+      "TITLE": "Experience",
+      "DESCRIPTION": "Over 10 years of experience in providing psychological support and therapy to individuals, couples, and groups."
+    },
+    "APPROACH": {
+      "TITLE": "My Approach",
+      "DESCRIPTION": "I believe in creating a safe, non-judgmental space where you can explore your thoughts and feelings. My approach combines evidence-based techniques with personalized care."
+    },
+    "EDUCATION": {
+      "TITLE": "Education & Certifications",
+      "DESCRIPTION": "Licensed psychologist with a Master's degree in Clinical Psychology and continuous professional development through specialized training and certifications."
+    }
+  },
   "METADATA": {
     "TITLE": "Online Psychologist",
     "DESCRIPTION": "Book your online consultation with a psychologist",
     "SERVICES": "Services",
     "BOOK": "Book a Session",
-    "CONTACTS": "Contact Us"
+    "CONTACTS": "Contact Us",
+    "ABOUT": "About the Psychologist",
+    "ABOUT_DESCRIPTION": "Learn more about your psychologist's experience, approach, and qualifications"
   },
   "NOT_FOUND": {
     "TITLE": "Not Found",
