@@ -13,9 +13,9 @@ export const ABOUT_PATH = "/about";
 export const PATHS = [HOME_PATH, SERVICES_PATH, BOOK_PATH, CONTACTS_PATH, ABOUT_PATH] as const;
 
 export const ROUTES: Record<NavigationKeysType, (typeof PATHS)[number]> = {
+  HOME: HOME_PATH,
+  ABOUT: ABOUT_PATH,
+  BOOK: BOOK_PATH,
   SERVICES: SERVICES_PATH,
   CONTACTS: CONTACTS_PATH,
-  HOME: HOME_PATH,
-  BOOK: BOOK_PATH,
-  ABOUT: ABOUT_PATH,
 };

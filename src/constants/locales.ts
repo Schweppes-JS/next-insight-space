@@ -6,6 +6,6 @@ export const LOCALE_UK_CODE = "uk";
 
 export const LOCALE_EN_CODE = "en";
 
-export const LOCALES = [LOCALE_UK_CODE, LOCALE_EN_CODE];
+export const LOCALES = [LOCALE_UK_CODE, LOCALE_EN_CODE] as const;
 
 export const DEFAULT_LOCALE = LOCALE_UK_CODE;

@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 
-import { Header } from "@/components/app-layout/header";
+import { Header } from "@/components/app-layout/header/header";
 import { INTER } from "@/constants/fonts";
 import { LOCALES } from "@/constants/locales";
 import { GenerateMetadataType, LayoutPropsType } from "@/types/app-types";
@@ -33,6 +33,7 @@ export default async function RootLayout({ children, params }: LayoutPropsType) 
 export const generateMetadata: GenerateMetadataType = async ({ params }) => {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "METADATA" });
+
   return {
     icons: { icon: [{ url: "/favicon.ico" }], apple: [{ url: "/apple-icon.png" }] },
     description: t("DESCRIPTION"),

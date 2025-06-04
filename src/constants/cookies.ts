@@ -1,1 +1,1 @@
-export const USER_LOCALE_KEY = "USER_LOCALE";
+export const COOKIES_LOCALE_KEY = "COOKIES_LOCALE";

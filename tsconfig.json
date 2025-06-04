@@ -19,6 +19,10 @@
       }
     ],
     "paths": {
+      "@app-layout/*": ["./src/components/app-layout/*"],
+      "@pages/*": ["./src/components/pages/*"],
+      "@routing/*": ["./src/i18n/routing/*"],
+      "@ui/*": ["./src/components/ui/*"],
       "@/*": ["./src/*"]
     }
   },

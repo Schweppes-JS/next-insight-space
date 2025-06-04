@@ -1,10 +1,10 @@
-import { cookies } from "next/headers";
-
 import { HOME_PATH } from "@/constants/routes";
+import withLocaleFromCookie from "@/hooks/withLocaleFromCookie";
 import { redirect } from "@/i18n/routing";
-import { getLocaleFromCookie } from "@/lib/utils";
+import { LocalePropsType } from "@/types/app-types";
 
-export default async function Redirect() {
-  const locale = await getLocaleFromCookie(cookies);
-  redirect({ href: HOME_PATH, locale });
+async function RedirectToLocale({ locale }: LocalePropsType["params"]) {
+  return <>{redirect({ href: HOME_PATH, locale })}</>;
 }
+
+export default withLocaleFromCookie(RedirectToLocale);
